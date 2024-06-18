@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".loginpage"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/loginbackground"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loginimage"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="280dp"
+        app:cardCornerRadius="30dp"
+        android:backgroundTint="@color/white"
+        android:foregroundGravity="center"
+        style="@style/ShapeAppearance.Material3.LargeComponent"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:id="@+id/btnsignup"
+            android:backgroundTint="#198EB6"
+            android:layout_marginTop="340dp"
+            android:layout_marginStart="20dp"
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:id="@+id/tvLogininbut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SignUp"
+                android:layout_gravity="center"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:visibility="visible"/>
+
+            <ProgressBar
+                android:id="@+id/progressbarview"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:progress="25"
+                android:backgroundTint="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tvWaitinbut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please wait..."
+                android:layout_gravity="center"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <EditText
+            android:id="@+id/edName"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/idettxtlogin"
+            android:drawableLeft="@drawable/personlogin"
+            android:drawableTint="#257BBF"
+            android:padding="10dp"
+            android:drawablePadding="8dp"
+            android:hint="  Name"
+            android:textColorHint="@color/black"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/edEmailup"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="10dp"
+            android:drawableLeft="@drawable/emaillogin"
+            android:background="@drawable/idettxtlogin"
+            android:drawableTint="#257BBF"
+            android:padding="10dp"
+            android:drawablePadding="8dp"
+            android:hint="   Email"
+            android:textColorHint="@color/black"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/edpasswordup"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="10dp"
+            android:drawableLeft="@drawable/passwordlogin"
+            android:background="@drawable/idettxtlogin"
+            android:drawableTint="#257BBF"
+            android:padding="10dp"
+            android:drawablePadding="8dp"
+            android:hint="  Password"
+            android:textColorHint="@color/black"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/edconfermpass"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="260dp"
+            android:layout_marginStart="10dp"
+            android:drawableLeft="@drawable/passwordlogin"
+            android:background="@drawable/idettxtlogin"
+            android:drawableTint="#257BBF"
+            android:padding="10dp"
+            android:drawablePadding="8dp"
+            android:hint="  Confirm Password"
+            android:textColorHint="@color/black"
+            android:inputType="textPassword"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="already have account?"
+    android:layout_marginTop="690dp"
+    android:layout_marginStart="70dp"
+    android:textSize="17sp"
+    android:textStyle="bold"
+    />
+
+    <TextView
+        android:id="@+id/tvtologinpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login!"
+        android:layout_marginTop="690dp"
+        android:layout_marginStart="235dp"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:textColor="@color/parent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

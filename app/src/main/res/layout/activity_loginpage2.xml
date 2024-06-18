@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".loginpage2"
+    >
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/loginbackground"
+        />
+
+
+    <ImageView
+        android:id="@+id/imageswitcher1"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:src="@drawable/loginimage"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:foregroundGravity="center"
+        />
+
+
+    <ImageView
+        android:id="@+id/imageswitcher2"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/splashscreenlogo"
+        android:foregroundGravity="center"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardlogin"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="300dp"
+        app:cardCornerRadius="30dp"
+        android:backgroundTint="@color/white"
+        android:foregroundGravity="center"
+        style="@style/ShapeAppearance.Material3.LargeComponent"
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/butlogingoogle"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="255dp"
+            android:layout_gravity="center_horizontal"
+            app:cardCornerRadius="10dp"
+            android:background="@drawable/idettxtlogin"
+            android:elevation="15dp"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/google"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login with Google"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="60dp"
+                android:textColor="@color/parent"
+                android:textSize="15sp"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:id="@+id/btnlogin"
+            android:backgroundTint="#198EB6"
+            android:layout_marginTop="200dp"
+            android:layout_marginStart="20dp"
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:id="@+id/tvLogininbut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_gravity="center"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:visibility="visible"/>
+
+            <ProgressBar
+                android:id="@+id/progressbarview"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:progress="25"
+                android:backgroundTint="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tvWaitinbut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please wait..."
+                android:layout_gravity="center"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="10dp"
+            android:drawableLeft="@drawable/emaillogin"
+            android:background="@drawable/idettxtlogin"
+            android:drawableTint="#257BBF"
+            android:padding="10dp"
+            android:drawablePadding="8dp"
+            android:hint=" Email"
+            android:textColorHint="@color/black"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/edpassword"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="10dp"
+            android:drawableLeft="@drawable/passwordlogin"
+            android:background="@drawable/idettxtlogin"
+            android:drawableTint="#257BBF"
+            android:padding="10dp"
+            android:drawablePadding="8dp"
+            android:hint="  Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/tvforgetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password ?!"
+            android:layout_marginTop="170dp"
+            android:layout_marginStart="130dp"
+            android:textAlignment="textEnd"
+            android:textColor="#0D2430"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardnamecash"
+        android:layout_width="300dp"
+        android:layout_height="360dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="280dp"
+        app:cardCornerRadius="30dp"
+        android:backgroundTint="@color/white"
+        android:foregroundGravity="center"
+        style="@style/ShapeAppearance.Material3.LargeComponent"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/butback"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="#072A36"
+            android:drawablePadding="1dp"
+            android:drawableLeft="@drawable/backbutton"
+            android:text="Back"
+            android:textColor="@color/white"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextcode"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center_horizontal"
+            android:shadowColor="@color/black"
+            android:drawableLeft="@drawable/personlogin"
+            android:drawableTint="#257BBF"
+            android:padding="10dp"
+            android:drawablePadding="8dp"
+            android:hint="Name"
+            android:textColorHint="@color/black"
+            android:inputType="textCapWords"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:background="@drawable/idettxtlogin"
+            android:outlineAmbientShadowColor="@color/black"
+                />
+
+          <Button
+            android:id="@+id/butcode"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#198EB6"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardpassmanager"
+        android:layout_width="300dp"
+        android:layout_height="360dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="280dp"
+        app:cardCornerRadius="30dp"
+        android:backgroundTint="@color/white"
+        android:foregroundGravity="center"
+        style="@style/ShapeAppearance.Material3.LargeComponent"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/butback2"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="#072A36"
+            android:drawablePadding="1dp"
+            android:drawableLeft="@drawable/backbutton"
+            android:text="Back"
+            android:textColor="@color/white"
+            />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="80dp"
+                android:layout_gravity="center_horizontal"
+                android:shadowColor="@color/black"
+                android:hint="Password"
+                android:padding="10dp"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/passwordlogin"
+                android:textColorHint="@color/black"
+                android:inputType="numberPassword"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:background="@drawable/idettxtlogin"
+                android:outlineAmbientShadowColor="@color/black"
+                />
+
+        <Button
+            android:id="@+id/butpass"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#198EB6"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have account ?"
+        android:layout_marginTop="600dp"
+        android:layout_marginStart="80dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        />
+
+    <TextView
+        android:id="@+id/tvtologinpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  SignUp!"
+        android:layout_marginTop="600dp"
+        android:layout_marginStart="230dp"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:textColor="@color/parent"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+
+
+
+
+
+</RelativeLayout>

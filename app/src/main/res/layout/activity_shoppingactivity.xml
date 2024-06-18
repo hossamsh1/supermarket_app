@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profiletest"
+    tools:context=".shoppingactivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/buttom_navigation2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:menu="@menu/bottom_menu"
+        app:labelVisibilityMode="unlabeled"
+        android:background="@color/parent"
+        app:elevation="6dp"
+        android:paddingTop="0dp"
+        app:itemPaddingBottom="0dp"
+        app:itemRippleColor="@color/parent"
+        app:itemIconTint="@drawable/itemselector_nivigationbar"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true"
+        app:itemIconSize="30dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttom_navigation2"> <!-- Ensure ScrollView is above BottomNavigationView -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarExercise"
+                app:layout_constraintBaseline_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/parent"
+                app:titleTextColor="@color/white"
+                >
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonback"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:drawableStart="@drawable/backbutton"
+                    android:padding="10dp"
+                    android:background="@drawable/buttonback"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/butLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="250dp"
+                    android:background="@drawable/buttonback"
+                    android:backgroundTint="#d62828"
+                    android:text="LogOut"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/dashpordui"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/userpecture"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/myacount"
+
+                />
+
+            <TextView
+                android:id="@+id/Welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="10dp"
+                android:text="Welcome"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvnameuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="10dp"
+                android:text="User's Name"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/oferprice"/>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categoris"
+                    android:textSize="20sp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/white"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See all"
+                    android:layout_marginStart="240dp"
+                    android:textSize="16sp"
+                    android:textColor="#caf0f8"
+                    android:textStyle="italic"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="@color/white">
+
+                        <ImageView
+                            android:id="@+id/imageoxi1"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/oxi"/>
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="                OXI SL    "
+                            android:layout_marginTop="200dp"
+                            android:textSize="19sp"/>
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="                  18 $"
+                            android:layout_marginTop="225dp"
+                            android:textSize="19sp"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="@color/white">
+
+                        <ImageView
+                            android:id="@+id/imagemeswak"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/miswak"/>
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="             Miswak    "
+                            android:layout_marginTop="200dp"
+                            android:textSize="19sp"/>
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="                  38 $"
+                            android:layout_marginTop="225dp"
+                            android:textSize="19sp"/>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="@color/white">
+
+                        <ImageView
+                            android:id="@+id/imageoxi"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/oxigil"/>
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="                oxi gel    "
+                            android:layout_marginTop="200dp"
+                            android:textSize="19sp"/>
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="                  50 $"
+                            android:layout_marginTop="225dp"
+                            android:textSize="19sp"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="@color/white">
+
+                        <ImageView
+                            android:id="@+id/oxi3"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/oxils"/>
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="                   OXI    "
+                            android:layout_marginTop="200dp"
+                            android:textSize="19sp"/>
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="                  70 $"
+                            android:layout_marginTop="225dp"
+                            android:textSize="19sp"/>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp">
+
+                        <ImageView
+                            android:id="@+id/palstin"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/oferbigsale"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="@color/white">
+
+                        <ImageView
+                            android:id="@+id/sperosbats"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/spirospathis"/>
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="          spirospathis    "
+                            android:layout_marginTop="200dp"
+                            android:textSize="19sp"/>
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="                  12 $"
+                            android:layout_marginTop="225dp"
+                            android:textSize="19sp"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="@color/white">
+
+                        <ImageView
+                            android:id="@+id/domty1"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/domtyromy"/>
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="          domty romy    "
+                            android:layout_marginTop="200dp"
+                            android:textSize="19sp"/>
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="                  35 $"
+                            android:layout_marginTop="225dp"
+                            android:textSize="19sp"/>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="@color/white">
+
+                        <ImageView
+                            android:id="@+id/domty2"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/domtytomato"/>
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="          domty tomato    "
+                            android:layout_marginTop="200dp"
+                            android:textSize="19sp"/>
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="                  35 $"
+                            android:layout_marginTop="225dp"
+                            android:textSize="19sp"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="@color/white">
+
+                        <ImageView
+                            android:id="@+id/abotarek"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/abotarek"/>
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="              koshary      "
+                            android:layout_marginTop="200dp"
+                            android:textSize="19sp"/>
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="                  40 $"
+                            android:layout_marginTop="225dp"
+                            android:textSize="19sp"/>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="@color/white">
+
+                        <ImageView
+                            android:id="@+id/dopleder"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/dopleder"/>
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="             Doubledre"
+                            android:layout_marginTop="200dp"
+                            android:textSize="19sp"/>
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="                 $15 $"
+                            android:layout_marginTop="225dp"
+                            android:textSize="19sp"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="@color/white">
+
+                        <ImageView
+                            android:id="@+id/indomy"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/indomy"/>
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="             indomie"
+                            android:layout_marginTop="200dp"
+                            android:textSize="19sp"/>
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="-10dp"
+                            android:text="                10 $"
+                            android:layout_marginTop="225dp"
+                            android:textSize="19sp"/>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <fragment
+        android:id="@+id/shoppingHostfragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/shopping_graph" />
+
+</RelativeLayout>
+
+

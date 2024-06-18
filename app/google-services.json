@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "198035411332",
+    "firebase_url": "https://sopermarketapp-default-rtdb.firebaseio.com",
+    "project_id": "sopermarketapp",
+    "storage_bucket": "sopermarketapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198035411332:android:342f595591b870abebcdd1",
+        "android_client_info": {
+          "package_name": "com.example.sopermarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198035411332-mniu7damk9nenrr759lqgalinbnvjutk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sopermarket",
+            "certificate_hash": "6e16993197d23408f5df1555b7744761b060a625"
+          }
+        },
+        {
+          "client_id": "198035411332-bi233lr6nbok9t6u832er9n7hm0uv190.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKJHCdZ2_KFrp1hl_8DMgTLuIDjROKZl4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198035411332-bi233lr6nbok9t6u832er9n7hm0uv190.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".forgotpass">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/forgotpassword"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FORGOT PASSWORD"
+        android:textSize="30sp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="45dp"
+        android:textColor="#091820"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="     Provide your account's email for which"
+        android:textSize="17sp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#091820"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="          you want to reset your password"
+        android:textSize="17sp"
+        android:layout_marginTop="268dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#091820"
+        />
+
+    <EditText
+        android:id="@+id/edEmailforgotpass"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="10dp"
+        android:drawableLeft="@drawable/emaillogin"
+        android:background="@drawable/idettxtlogin"
+        android:drawableTint="#257BBF"
+        android:padding="10dp"
+        android:drawablePadding="8dp"
+        android:hint="   Email"
+        android:textColorHint="@color/black"
+        android:inputType="textEmailAddress"
+        />
+
+    <Button
+        android:id="@+id/btnforgotpass"
+        android:layout_width="450dp"
+        android:layout_height="70dp"
+        android:drawableLeft="@android:drawable/ic_menu_rotate"
+        android:backgroundTint="@color/black"
+        android:drawableTint="@color/white"
+        android:layout_marginTop="500dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/white"
+        android:text="Reset password"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="450dp"
+        android:layout_height="70dp"
+        android:drawableLeft="@android:drawable/ic_menu_revert"
+        android:backgroundTint="#484533"
+        android:drawableTint="@color/white"
+        android:layout_marginTop="600dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/white"
+        android:text="Back"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+
+
+</RelativeLayout>

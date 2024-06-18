@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graphmyapp"
+    app:startDestination="@id/loginpage2">
+
+    <activity
+        android:id="@+id/loginpage2"
+        android:name="com.example.sopermarket.loginpage2"
+        android:label="activity_loginpage2"
+        tools:layout="@layout/activity_loginpage2" />
+    <activity
+        android:id="@+id/infomanager"
+        android:name="com.example.sopermarket.infomanager"
+        android:label="activity_infomanager"
+        tools:layout="@layout/activity_infomanager" />
+    <activity
+        android:id="@+id/forgotpass"
+        android:name="com.example.sopermarket.forgotpass"
+        android:label="activity_forgotpass"
+        tools:layout="@layout/activity_forgotpass" />
+    <activity
+        android:id="@+id/shoppingactivity"
+        android:name="com.example.sopermarket.shoppingactivity"
+        android:label="activity_shoppingactivity"
+        tools:layout="@layout/activity_shoppingactivity" />
+    <activity
+        android:id="@+id/infocasher"
+        android:name="com.example.sopermarket.infocasher"
+        android:label="activity_infocasher"
+        tools:layout="@layout/activity_infocasher" />
+    <activity
+        android:id="@+id/loginpage"
+        android:name="com.example.sopermarket.loginpage"
+        android:label="activity_loginpage"
+        tools:layout="@layout/activity_loginpage" />
+</navigation>

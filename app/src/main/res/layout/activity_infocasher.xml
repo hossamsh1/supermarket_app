@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".infocasher">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:cardCornerRadius="20dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cashare"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:layout_marginStart="110dp"
+        android:text="Hello"
+        android:textColor="#311B88"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvnamecasher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:layout_marginStart="200dp"
+        android:text="name"
+        android:textColor="#450C1F"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        />
+
+    <Button
+        android:id="@+id/butcode"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="680dp"
+        android:layout_marginStart="100dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#046262"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+
+    <TableLayout
+        android:layout_width="370dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginStart="20dp"
+        >
+        <TableRow
+            android:background="#93A194"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Code"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name of item"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cost"
+                android:textColor="@color/black"
+                />
+        </TableRow>
+        <TableRow
+            android:background="#E5EBF3"
+            android:padding="10dp">
+            <EditText
+                android:id="@+id/itemcode1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textCapWords"
+                android:hint="item"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/tvnameitem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="_"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/tvcostitem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="_"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+        </TableRow>
+        <TableRow
+            android:background="#E5EBF3"
+            android:padding="10dp">
+            <EditText
+                android:id="@+id/itemcode2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textCapWords"
+                android:hint="item"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/tvnameitem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="_"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/tvcostitem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="_"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+            </TableRow>
+
+        <TableRow
+            android:background="#F2787878"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="total"
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+            <TextView
+                android:id="@+id/tvtotalriew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:layout_marginStart="80dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="365dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/scanid"
+        />
+</RelativeLayout>
